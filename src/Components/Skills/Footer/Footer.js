@@ -52,7 +52,7 @@ function Footerr() {
 
       <div className={styles["bottomNav"]}>
         <p className={styles.pStyle}>
-          Copyright © 2023 Josh Talks UPSC. All rights reserved
+          Copyright © 2023 Josh Talks Skills. All rights reserved
         </p>
       </div>
       <div
