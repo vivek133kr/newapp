@@ -3,7 +3,7 @@ import Image from "next/image";
 import Book from "../../../../public/images/book.png";
 
 import PhoneIcon from "@mui/icons-material/Phone";
-import MenuIcon from "@mui/icons-material/Menu";
+
 import Logo from "../../../../public/images/logo.png";
 import EmailIcon from "@mui/icons-material/Email";
 import styles from "../../../styles/skills/footer.module.css";
@@ -64,12 +64,16 @@ function Footerr() {
       ></div>
       <div className={styles["bottomNav"]}>
         <div className={styles["copyRight"]}>
-          <p
-            className={`${styles["pStyles"]} mt-2 flex `}
-            style={{ cursor: "pointer" }}
+          <div
+            className={`${styles["pStyles"]} ${styles["newP"]} mt-2 flex `}
+            style={{ cursor: "pointer", display: "flex", flexDirection: "row" }}
           >
-            <span
-              style={{ marginRight: "10px" }}
+            <div
+              style={{
+                marginRight: "10px",
+                marginTop: "0px",
+                marginBottom: "0px",
+              }}
               className={`${styles["pStyle"]}`}
             >
               <Image
@@ -77,15 +81,19 @@ function Footerr() {
                 style={{ height: "15px", width: "20px" }}
                 alt="book"
               />
-            </span>
-            Privacy Policy
-          </p>
-          <p
-            className={`${styles["pStyles"]} mt-2 flex `}
-            style={{ cursor: "pointer" }}
+            </div>
+            <p style={{ margin: "0px" }}> Privacy Policy</p>
+          </div>
+          <div
+            className={`${styles["pStyles"]} ${styles["newP"]} mt-2 flex `}
+            style={{ cursor: "pointer", display: "flex", flexDirection: "row" }}
           >
-            <span
-              style={{ marginRight: "10px" }}
+            <div
+              style={{
+                marginRight: "10px",
+                marginTop: "0px",
+                marginBottom: "0px",
+              }}
               className={`${styles["pStyle"]}`}
             >
               <Image
@@ -93,15 +101,19 @@ function Footerr() {
                 style={{ height: "15px", width: "20px" }}
                 alt="book"
               />
-            </span>
-            Terms and Conditions
-          </p>
-          <p
-            className={`${styles["pStyles"]} mt-2 flex `}
-            style={{ cursor: "pointer" }}
+            </div>
+            <p style={{ margin: "0px" }}>Terms and Conditions</p>
+          </div>
+          <div
+            className={`${styles["pStyles"]} ${styles["newP"]} mt-2 flex `}
+            style={{ cursor: "pointer", display: "flex", flexDirection: "row" }}
           >
-            <span
-              style={{ marginRight: "10px" }}
+            <div
+              style={{
+                marginRight: "10px",
+                marginTop: "0px",
+                marginBottom: "0px",
+              }}
               className={`${styles["pStyle"]}`}
             >
               <Image
@@ -109,9 +121,9 @@ function Footerr() {
                 style={{ height: "15px", width: "20px" }}
                 alt="bookr"
               />
-            </span>
-            Cancellation / Refund Policy
-          </p>
+            </div>
+            <p style={{ margin: "0px" }}>Cancellation / Refund Policy</p>
+          </div>
         </div>
       </div>
     </div>
